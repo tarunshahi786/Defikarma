@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Defi Karma — Crypto Growth & Visibility Agency</title>
+  <meta name="description" content="Defi Karma helps crypto projects grow visibility across CoinMarketCap, CoinGecko, DexScreener, DexTools, trending platforms, search bars, listings, sentiment feeds, and Web3 discovery channels." />
+  <meta property="og:title" content="Defi Karma — Crypto Growth & Visibility Agency" />
+  <meta property="og:description" content="Your actions, your assets, your karma — crypto growth services built for visibility, momentum, and market attention." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@500,700,800&display=swap" rel="stylesheet" />
+  <style>
+    :root, [data-theme="light"] {
+      --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+      --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+      --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+      --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+      --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+      --text-2xl: clamp(2.25rem, 1.2rem + 3.8vw, 5rem);
+      --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem; --space-5: 1.25rem; --space-6: 1.5rem; --space-8: 2rem; --space-10: 2.5rem; --space-12: 3rem; --space-16: 4rem; --space-20: 5rem; --space-24: 6rem;
+      --color-bg: #f3f6ef;
+      --color-surface: #f8faf5;
+      --color-surface-2: #ffffff;
+      --color-surface-offset: #e8eee1;
+      --color-border: #ced8c3;
+      --color-divider: #d9e1d1;
+      --color-text: #132016;
+      --color-text-muted: #5e6d60;
+      --color-text-faint: #8b988d;
+      --color-text-inverse: #f6f8f2;
+      --color-primary: #1b7a50;
+      --color-primary-hover: #135c3b;
+      --color-primary-highlight: #dcebdd;
+      --color-gold: #c89a2b;
+      --color-gold-deep: #8f6b14;
+      --shadow-sm: 0 1px 2px rgba(16,24,16,.08);
+      --shadow-md: 0 10px 30px rgba(18,35,21,.09);
+      --shadow-lg: 0 24px 60px rgba(18,35,21,.13);
+      --radius-sm: .5rem; --radius-md: .9rem; --radius-lg: 1.25rem; --radius-xl: 1.75rem; --radius-full: 999px;
+      --font-body: 'General Sans', Inter, sans-serif;
+      --font-display: 'Cabinet Grotesk', 'General Sans', sans-serif;
+      --content: 1180px;
+    }
+    [data-theme="dark"] {
+      --color-bg: #07110a;
+      --color-surface: #0b1710;
+      --color-surface-2: #102116;
+      --color-surface-offset: #12251a;
+      --color-border: #1e3a2c;
+      --color-divider: #173223;
+      --color-text: #edf5ec;
+      --color-text-muted: #a7b8aa;
+      --color-text-faint: #79907f;
+      --color-text-inverse: #07110a;
+      --color-primary: #2da26b;
+      --color-primary-hover: #248557;
+      --color-primary-highlight: rgba(45,162,107,.14);
+      --color-gold: #ddb14e;
+      --color-gold-deep: #9f7923;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,.25);
+      --shadow-md: 0 10px 30px rgba(0,0,0,.28);
+      --shadow-lg: 0 24px 60px rgba(0,0,0,.45);
+    }
+    *,:before,:after{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{margin:0;font-family:var(--font-body);font-size:var(--text-base);line-height:1.6;background:
+      radial-gradient(circle at top right, rgba(221,177,78,.14), transparent 25%),
+      radial-gradient(circle at top left, rgba(45,162,107,.12), transparent 28%),
+      var(--color-bg);color:var(--color-text)}
+    img,svg{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit}
+    .skip-link{position:absolute;left:-9999px;top:auto}.skip-link:focus{left:1rem;top:1rem;background:var(--color-surface-2);padding:.75rem 1rem;border-radius:var(--radius-md);z-index:1000}
+    .container{width:min(calc(100% - 2rem), var(--content));margin-inline:auto}
+    .section{padding:clamp(var(--space-16),8vw,var(--space-24)) 0}
+    .eyebrow{font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.18em;color:var(--color-gold);font-weight:700}
+    .badge{display:inline-flex;align-items:center;gap:.5rem;padding:.55rem .9rem;border-radius:var(--radius-full);background:var(--color-primary-highlight);border:1px solid rgba(255,255,255,.06);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.1em;color:var(--color-text)}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(7,17,10,.72);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.05)}
+    [data-theme="light"] .site-header{background:rgba(243,246,239,.85);border-bottom:1px solid rgba(19,32,22,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0}
+    .brand{display:flex;align-items:center;gap:.9rem;font-weight:700}
+    .brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,var(--color-primary),#0f4f34);display:grid;place-items:center;box-shadow:var(--shadow-md)}
+    .brand-mark svg{width:24px;height:24px;color:var(--color-gold)}
+    .brand-text{font-family:var(--font-display);font-size:1.1rem;letter-spacing:.04em}
+    .nav-links{display:flex;gap:1.25rem;align-items:center;color:var(--color-text-muted);font-size:var(--text-sm)}
+    .nav-links a:hover{color:var(--color-text)}
+    .nav-actions{display:flex;align-items:center;gap:.75rem}
+    .theme-toggle,.menu-toggle{min-width:44px;min-height:44px;border-radius:var(--radius-full);border:1px solid rgba(255,255,255,.08);background:var(--color-surface);color:var(--color-text);display:grid;place-items:center;cursor:pointer}
+    [data-theme="light"] .theme-toggle,[data-theme="light"] .menu-toggle{border-color:rgba(19,32,22,.08)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;min-height:48px;padding:.9rem 1.3rem;border-radius:var(--radius-full);font-size:var(--text-sm);font-weight:600;border:1px solid transparent;transition:.2s ease;cursor:pointer}
+    .btn-primary{background:linear-gradient(135deg,var(--color-gold),#f2ca72);color:#151006;box-shadow:0 12px 30px rgba(201,154,43,.24)}
+    .btn-primary:hover{transform:translateY(-1px);filter:saturate(1.05)}
+    .btn-secondary{background:transparent;border-color:rgba(255,255,255,.12);color:var(--color-text)}
+    [data-theme="light"] .btn-secondary{border-color:rgba(19,32,22,.12)}
+    .hero{padding:clamp(var(--space-16),10vw,var(--space-24)) 0 var(--space-16)}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(var(--space-8),5vw,var(--space-16));align-items:center}
+    .hero h1{font-family:var(--font-display);font-size:var(--text-2xl);line-height:.94;letter-spacing:-.04em;max-width:11ch;margin:.8rem 0 1.25rem}
+    .hero p{max-width:64ch;color:var(--color-text-muted);margin-bottom:1.5rem}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:1.5rem}
+    .proof-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:2rem}
+    .proof-item{padding:1rem 1.1rem;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.03);border-radius:var(--radius-lg)}
+    [data-theme="light"] .proof-item{border-color:rgba(19,32,22,.08);background:rgba(255,255,255,.7)}
+    .proof-item strong{display:block;font-size:1.35rem;font-family:var(--font-display);color:var(--color-gold)}
+    .hero-panel{position:relative;padding:1.1rem;border-radius:28px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow-lg)}
+    [data-theme="light"] .hero-panel{background:linear-gradient(180deg,rgba(255,255,255,.9),rgba(255,255,255,.72));border-color:rgba(19,32,22,.08)}
+    .dashboard-card{padding:1.3rem;border-radius:22px;background:var(--color-surface);border:1px solid rgba(255,255,255,.06)}
+    .mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem}
+    .mini-card,.service-card,.pricing-card,.step,.testimonial{background:var(--color-surface);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius-xl);box-shadow:var(--shadow-sm)}
+    [data-theme="light"] .mini-card,[data-theme="light"] .service-card,[data-theme="light"] .pricing-card,[data-theme="light"] .step,[data-theme="light"] .testimonial{border-color:rgba(19,32,22,.08)}
+    .mini-card{padding:1rem}
+    .mini-card span{display:block;color:var(--color-text-faint);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.1em}
+    .mini-card strong{display:block;margin-top:.35rem;font-size:1.1rem}
+    .section-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:2rem;align-items:end;margin-bottom:2rem}
+    .section-head h2{font-family:var(--font-display);font-size:clamp(2rem,1.25rem + 2vw,3.2rem);line-height:1;letter-spacing:-.04em;margin:.6rem 0 0}
+    .section-head p{color:var(--color-text-muted);max-width:62ch}
+    .services-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:1rem}
+    .service-card{padding:1.35rem}
+    .service-card.large{grid-column:span 6}
+    .service-card.medium{grid-column:span 4}
+    .service-card.small{grid-column:span 3}
+    .service-card h3{font-size:var(--text-lg);line-height:1.15;margin:.7rem 0}
+    .service-card p{color:var(--color-text-muted);font-size:var(--text-sm)}
+    .list{display:grid;gap:.55rem;margin:1rem 0 0;padding:0;list-style:none}
+    .list li{position:relative;padding-left:1.2rem;color:var(--color-text-muted);font-size:var(--text-sm)}
+    .list li::before{content:'';position:absolute;left:0;top:.68rem;width:8px;height:8px;border-radius:50%;background:var(--color-gold)}
+    .process-grid,.pricing-grid,.testimonial-grid,.faq-grid,.footer-grid{display:grid;gap:1rem}
+    .process-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .step{padding:1.4rem}
+    .step-number{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--color-primary-highlight);color:var(--color-gold);font-weight:700;margin-bottom:1rem}
+    .pricing-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+    .pricing-card{padding:1.5rem;display:flex;flex-direction:column;gap:1rem}
+    .pricing-card.featured{background:linear-gradient(180deg,rgba(221,177,78,.12),rgba(45,162,107,.08));transform:translateY(-6px)}
+    .price-tag{font-family:var(--font-display);font-size:2rem;line-height:1;color:var(--color-gold)}
+    .testimonial-grid{grid-template-columns:1.15fr .85fr}
+    .testimonial{padding:1.5rem}
+    .quote{font-family:var(--font-display);font-size:clamp(1.4rem,1rem + 1vw,2rem);line-height:1.12;max-width:18ch}
+    .stats-band{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin-top:2rem}
+    .stat{padding:1.3rem;border-radius:var(--radius-xl);background:var(--color-surface-offset);border:1px solid rgba(255,255,255,.05)}
+    .stat strong{display:block;font-family:var(--font-display);font-size:1.7rem;color:var(--color-gold)}
+    .faq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    details{background:var(--color-surface);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius-lg);padding:1rem 1.1rem}
+    [data-theme="light"] details{border-color:rgba(19,32,22,.08)}
+    summary{cursor:pointer;font-weight:600;list-style:none}
+    summary::-webkit-details-marker{display:none}
+    details p{color:var(--color-text-muted);margin-top:.8rem;font-size:var(--text-sm)}
+    .cta-box{padding:clamp(1.5rem,3vw,2.5rem);border-radius:32px;background:linear-gradient(135deg,rgba(45,162,107,.18),rgba(221,177,78,.14));border:1px solid rgba(255,255,255,.08);display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+    .cta-box h2{font-family:var(--font-display);font-size:clamp(2rem,1.2rem + 2vw,3.4rem);line-height:1;letter-spacing:-.04em;margin:.6rem 0}
+    .footer{padding:var(--space-12) 0 var(--space-8);border-top:1px solid rgba(255,255,255,.06)}
+    .footer-grid{grid-template-columns:1.1fr .9fr;align-items:start}
+    .footer p,.footer li,.muted{color:var(--color-text-muted);font-size:var(--text-sm)}
+    .footer-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+    .chip-row{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1rem}
+    .chip{padding:.6rem .85rem;border-radius:var(--radius-full);font-size:var(--text-xs);border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    [data-theme="light"] .chip{border-color:rgba(19,32,22,.08);background:rgba(255,255,255,.7)}
+    .mobile-nav{display:none}
+    .kicker{color:var(--color-text-faint);font-size:var(--text-sm)}
+    @media (max-width: 1024px){
+      .hero-grid,.section-head,.testimonial-grid,.cta-box,.footer-grid{grid-template-columns:1fr}
+      .process-grid,.pricing-grid,.faq-grid,.stats-band{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .service-card.large,.service-card.medium,.service-card.small{grid-column:span 6}
+    }
+    @media (max-width: 720px){
+      .nav-links{display:none}
+      .menu-toggle{display:grid}
+      .mobile-nav{display:none;flex-direction:column;gap:.9rem;padding:0 0 1rem;color:var(--color-text-muted)}
+      .mobile-nav.open{display:flex}
+      .proof-strip,.process-grid,.pricing-grid,.faq-grid,.stats-band,.mini-grid{grid-template-columns:1fr}
+      .services-grid{grid-template-columns:1fr}
+      .service-card.large,.service-card.medium,.service-card.small{grid-column:span 1}
+      .hero{padding-top:var(--space-12)}
+      .cta-box{padding:1.4rem}
+      .footer-links{grid-template-columns:1fr}
+    }
+    @media (min-width: 721px){.menu-toggle{display:none}}
+    @media (prefers-reduced-motion: reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        <a href="#top" class="brand" aria-label="Defi Karma home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l6 3.5v7L12 21l-6-7.5v-7L12 3Z"></path>
+              <path d="M8.5 11.5h7"></path>
+              <path d="M10 8.5c.8-.7 1.4-1 2-1 1.5 0 2.5 1 2.5 2.2 0 2.2-4.5 2-4.5 4.8"></path>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-text">DEFI KARMA</span>
+            <span class="kicker">Visibility agency for Web3 growth</span>
+          </span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#process">Process</a>
+          <a href="#offers">Offers</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a class="btn btn-secondary" href="#contact">Book intro</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#offers">Offers</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">Your actions 🔄 your assets 💰 your karma ⚖️</span>
+          <h1>Make your token impossible to ignore across the platforms traders actually watch.</h1>
+          <p>Defi Karma is a crypto growth agency built for projects that want attention, momentum, and market visibility. We structure discovery campaigns across CoinMarketCap, CoinGecko, DexScreener, DexTools, social trend surfaces, watchlists, listings, search bars, community signals, and Web3 discovery channels.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start your campaign</a>
+            <a class="btn btn-secondary" href="#services">Explore services</a>
+          </div>
+          <p class="muted">Get the latest crypto news, whale alerts, and new coin listings — real-time updates to keep your brand ahead in the DeFi world.</p>
+          <div class="proof-strip">
+            <div class="proof-item"><strong>50+</strong><span>High-intent growth actions across CMC, CG, DEX, search, sentiment, and listings.</span></div>
+            <div class="proof-item"><strong>Clean</strong><span>Luxury green and gold interface designed to match your logo direction and trust-first positioning.</span></div>
+            <div class="proof-item"><strong>1 page</strong><span>Fast, focused landing structure that can later expand into extra pages for offers or case studies.</span></div>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Agency overview panel">
+          <div class="dashboard-card">
+            <span class="eyebrow">Visibility Engine</span>
+            <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,1rem + 2vw,3rem);line-height:1.02;margin:.5rem 0 1rem;">Signal stacking for token discovery.</h2>
+            <p class="muted">One coordinated system across listings, trend surfaces, watchlists, community actions, social momentum, and trader-facing discovery channels.</p>
+            <div class="mini-grid">
+              <div class="mini-card"><span>Listings</span><strong>CMC, CoinGecko, stablecoin, preview, verification</strong></div>
+              <div class="mini-card"><span>Trending</span><strong>CMC, CoinGecko, GeckoTerminal, DexScreener, DexTools, DexView</strong></div>
+              <div class="mini-card"><span>Search</span><strong>Search bar visibility, country trends, OKX, Bitget, Birdeye</strong></div>
+              <div class="mini-card"><span>Community</span><strong>Followers, upvotes, comments, watchlists, sentiment actions</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Services</span>
+            <h2>Everything serious token teams ask for, under one clean roof.</h2>
+          </div>
+          <p>Instead of showing a chaotic long vendor list, this page groups your services into decision-friendly categories so founders instantly understand what you do and why it matters.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service-card large">
+            <span class="badge">CoinMarketCap Power</span>
+            <h3>CMC visibility, traction, and trust-building services.</h3>
+            <p>Support for comments, bullish upvotes, followers, watchlists, trending placement, most-visited presence, community verification, verified tags, supply verification, contract migration, listings, stablecoin listing flows, and listing previews.</p>
+            <ul class="list">
+              <li>Comments, upvotes, followers, and watchlist growth.</li>
+              <li>Trending top positions, search bar presence, sentiment traction, and weekly watchlist campaigns.</li>
+              <li>Verification layers such as categories, supply, community trust, and contract migration support.</li>
+            </ul>
+          </article>
+          <article class="service-card medium">
+            <span class="badge">CoinGecko + GeckoTerminal</span>
+            <h3>Discovery actions where retail traders search first.</h3>
+            <p>CoinGecko upvotes, watchlists, listings, trending positions, and GeckoTerminal search plus pool visibility across 24-hour and 1-week windows.</p>
+          </article>
+          <article class="service-card medium">
+            <span class="badge">DEX Surfaces</span>
+            <h3>DEX-native attention across Screener, Tools, View, and Solscan.</h3>
+            <p>DexScreener upvotes and trending, DexTools upvotes and chain-specific trending, DexTools warning removal guidance, DexView positions, and Solscan trending support.</p>
+          </article>
+          <article class="service-card small">
+            <span class="badge">Social Trend</span>
+            <h3>X/Twitter hashtag and ticker trend campaigns.</h3>
+            <p>1-hour, 2-hour, 3-hour consecutive trend windows, plus multi-day recurring trend planning.</p>
+          </article>
+          <article class="service-card small">
+            <span class="badge">Regional Search</span>
+            <h3>Country-specific trend support.</h3>
+            <p>3-country to 7-country trend campaigns over 2-day and 1-week cycles.</p>
+          </article>
+          <article class="service-card small">
+            <span class="badge">Exchange & Discovery</span>
+            <h3>Attention on crypto portals and exchange ecosystems.</h3>
+            <p>OKX top searches, Bitget Web3 bar search, Crypto.com trends, Birdeye visibility, CoinCodex, CoinCheckup, LiveCoinWatch, TokenInsight, Coinhunt, ave.ai, and more.</p>
+          </article>
+        </div>
+        <div class="chip-row" aria-label="Platform list">
+          <span class="chip">CoinMarketCap</span><span class="chip">CoinGecko</span><span class="chip">GeckoTerminal</span><span class="chip">DexScreener</span><span class="chip">DexTools</span><span class="chip">DexView</span><span class="chip">Solscan</span><span class="chip">Birdeye</span><span class="chip">Crypto.com</span><span class="chip">OKX</span><span class="chip">Bitget Web3</span><span class="chip">LiveCoinWatch</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Process</span>
+            <h2>Built like a campaign desk, not a random service menu.</h2>
+          </div>
+          <p>The page positions Defi Karma as a strategic operator: first defining the objective, then combining the right visibility levers, then pacing execution so traction feels coordinated instead of scattered.</p>
+        </div>
+        <div class="process-grid">
+          <article class="step">
+            <span class="step-number">01</span>
+            <h3>Audit the target</h3>
+            <p class="muted">We map your token stage, chain, audience, listing status, current traction, and the platforms where visibility matters most.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">02</span>
+            <h3>Stack the right actions</h3>
+            <p class="muted">We combine trending, watchlists, upvotes, comments, discovery listings, exchange search activity, and social trend pushes into one clean offer.</p>
+          </article>
+          <article class="step">
+            <span class="step-number">03</span>
+            <h3>Launch with momentum</h3>
+            <p class="muted">Campaign pacing is shaped to create a sharper impression across retail-facing surfaces, community channels, and search-driven discovery areas.</p>
+          </article>
+        </div>
+        <div class="stats-band">
+          <div class="stat"><strong>CMC</strong><span class="muted">Comments, followers, watchlists, trending, verification, listings.</span></div>
+          <div class="stat"><strong>CG</strong><span class="muted">CoinGecko and GeckoTerminal trend, upvote, and watchlist acceleration.</span></div>
+          <div class="stat"><strong>DEX</strong><span class="muted">DexScreener, DexTools, DexView, Solscan, and pair discovery momentum.</span></div>
+          <div class="stat"><strong>X</strong><span class="muted">Hashtag and ticker trend campaigns by hour, day, or geography.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="offers">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Offer Structure</span>
+            <h2>Present your agency with offers founders can understand in 10 seconds.</h2>
+          </div>
+          <p>These blocks make the landing page convert better than simply dumping every service line. You can later replace the sample package names and pricing language with your final commercial offer.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <span class="badge">Starter visibility</span>
+            <div class="price-tag">Launch</div>
+            <p class="muted">For new tokens that need discovery basics and early social proof.</p>
+            <ul class="list">
+              <li>Platform audit and visibility recommendations.</li>
+              <li>Entry-level CMC and CG traction stack.</li>
+              <li>Trend support on selected trader-facing surfaces.</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Ask about this</a>
+          </article>
+          <article class="pricing-card featured">
+            <span class="badge">Momentum package</span>
+            <div class="price-tag">Scale</div>
+            <p class="muted">For teams that want concentrated visibility across listings, trend panels, and community touchpoints.</p>
+            <ul class="list">
+              <li>Combined CMC, CG, DEX, and search surface plan.</li>
+              <li>Multi-platform trend windows with pacing.</li>
+              <li>Priority support for launch weeks and pushes.</li>
+            </ul>
+            <a class="btn btn-primary" href="#contact">Request custom quote</a>
+          </article>
+          <article class="pricing-card">
+            <span class="badge">Market domination</span>
+            <div class="price-tag">Elite</div>
+            <p class="muted">For aggressive campaigns that need layered presence across the ecosystem.</p>
+            <ul class="list">
+              <li>Regional trend support and exchange search visibility.</li>
+              <li>Extended watchlist, upvote, and sentiment programs.</li>
+              <li>Custom strategy for listings, signals, and reputation growth.</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Book strategy call</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container testimonial-grid">
+        <article class="testimonial">
+          <span class="eyebrow">Brand Positioning</span>
+          <p class="quote">Defi Karma should feel like the agency behind the curtain that knows exactly where attention moves before the market notices.</p>
+          <p class="muted">That is why the design stays premium, sharp, and disciplined: dark green authority, gold highlights, strong typography, minimal clutter, and category-led service presentation.</p>
+        </article>
+        <article class="testimonial">
+          <span class="eyebrow">Ideal Clients</span>
+          <ul class="list">
+            <li>Memecoin teams preparing for a visibility wave.</li>
+            <li>DeFi and AI tokens seeking stronger discovery signals.</li>
+            <li>Projects that need listing support plus trending exposure.</li>
+            <li>Founders who want a growth partner instead of a messy reseller page.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">FAQ</span>
+            <h2>Answer the trust questions before the client asks them.</h2>
+          </div>
+          <p>These FAQ blocks keep the page credible and reduce friction when founders compare you to random Telegram vendors with weak positioning.</p>
+        </div>
+        <div class="faq-grid">
+          <details open>
+            <summary>What does Defi Karma actually do?</summary>
+            <p>Defi Karma provides crypto visibility services across major coin data sites, DEX discovery tools, search surfaces, social trend windows, listings, watchlists, community metrics, and related market discovery channels.</p>
+          </details>
+          <details>
+            <summary>Can this page grow into more than one page later?</summary>
+            <p>Yes. This version is built as a strong single-page conversion site, but it can easily expand into up to four pages such as Services, Packages, Case Studies, and Contact.</p>
+          </details>
+          <details>
+            <summary>Why not list every single service in a giant raw table?</summary>
+            <p>A grouped structure converts better. Founders understand categories faster than a chaotic operational sheet, while you still preserve the full range of capabilities.</p>
+          </details>
+          <details>
+            <summary>Can the final website use your exact logo?</summary>
+            <p>Yes. Your green-background and gold-wordmark logo can replace the current SVG mark immediately once the final image asset is inserted.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <span class="eyebrow">Contact</span>
+            <h2>Turn the service sheet into a luxury client-facing brand.</h2>
+            <p class="muted">This landing page is designed to sell clarity, confidence, and scale. Add your Telegram, X, email, Calendly, Stripe links, and final logo to publish it fast on Carrd, Framer, Webflow, or any static host.</p>
+          </div>
+          <div>
+            <div class="dashboard-card">
+              <p class="muted" style="margin-bottom:1rem;">Suggested contact block</p>
+              <ul class="list" style="margin-top:0;">
+                <li>Telegram: @defikarma</li>
+                <li>X / Twitter: @defikarma</li>
+                <li>Email: hello@defikarma.com</li>
+                <li>Primary CTA: Book a strategy call</li>
+              </ul>
+              <div class="hero-actions" style="margin-top:1.2rem;margin-bottom:0;">
+                <a class="btn btn-primary" href="mailto:hello@defikarma.com">Email agency</a>
+                <a class="btn btn-secondary" href="#top">Back to top</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:.9rem;">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3l6 3.5v7L12 21l-6-7.5v-7L12 3Z"></path>
+              <path d="M8.5 11.5h7"></path>
+              <path d="M10 8.5c.8-.7 1.4-1 2-1 1.5 0 2.5 1 2.5 2.2 0 2.2-4.5 2-4.5 4.8"></path>
+            </svg>
+          </span>
+          <span>
+            <span class="brand-text">DEFI KARMA</span>
+            <span class="kicker">Crypto moves that matter.</span>
+          </span>
+        </div>
+        <p>Your actions 🔄 your assets 💰 your karma ⚖️ — crypto moves that matter. Built to position Defi Karma as a premium crypto visibility agency.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <p class="eyebrow">Sections</p>
+          <p><a href="#services">Services</a></p>
+          <p><a href="#process">Process</a></p>
+          <p><a href="#offers">Offers</a></p>
+        </div>
+        <div>
+          <p class="eyebrow">Next edits</p>
+          <p>Add your final logo</p>
+          <p>Insert real contact links</p>
+          <p>Publish on your chosen host</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const root = document.documentElement;
+      const toggle = document.querySelector('[data-theme-toggle]');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      let theme = prefersDark ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      const syncIcon = () => {
+        toggle.innerHTML = theme === 'dark'
+          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      };
+      syncIcon();
+      toggle.addEventListener('click', function(){
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        syncIcon();
+      });
+      const menuBtn = document.querySelector('.menu-toggle');
+      const mobileNav = document.getElementById('mobileNav');
+      if(menuBtn && mobileNav){
+        menuBtn.addEventListener('click', function(){
+          const open = mobileNav.classList.toggle('open');
+          menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+          mobileNav.classList.remove('open');
+          menuBtn.setAttribute('aria-expanded', 'false');
+        }));
+      }
+    })();
+  </script>
+</body>
+</html>
